@@ -2,16 +2,16 @@ package exer;
 
 public class FrutaPeso extends Fruta{
 	//Fields
-	private double peso = 0;
+	private float peso = 0;
 	
 	//Construtor
-	public FrutaPeso(String aNome, double aPrecoBase, double aPeso) {
+	public FrutaPeso(String aNome, double aPrecoBase, float aPeso) {
 		super(aNome, aPrecoBase, true);
 		peso = aPeso;
 	}
 	
 	//Métodos
-	public double peso() {
+	public float peso() {
 		return peso;
 	}
 	

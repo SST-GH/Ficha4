@@ -2,16 +2,16 @@ package exer;
 
 public class FrutaVolume extends Fruta{
 	//Fields
-	private int volume = 0;
+	private float volume = 0;
 	
 	//Construtor
-	public FrutaVolume(String aNome, double aPrecoBase, int aVolume) {
+	public FrutaVolume(String aNome, double aPrecoBase, float aVolume) {
 		super(aNome, aPrecoBase, true);
 		volume = aVolume;
 	}
 	
 	//Métodos
-	public int volume() {
+	public float volume() {
 		return volume;
 	}
 	
