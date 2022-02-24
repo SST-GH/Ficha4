@@ -15,7 +15,8 @@ public class FrutaPeso extends Fruta{
 		return peso;
 	}
 	
+	@Override
 	public double pagar() {
-		return super.pagar()*peso;
+		return getPrecoBase()*peso;
 	}
 }

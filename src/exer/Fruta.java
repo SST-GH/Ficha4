@@ -14,9 +14,7 @@ public abstract class Fruta {
 	}
 	
 	//Métodos
-	public double pagar() {
-		return precoBase;
-	}
+	public abstract double pagar();
 	
 	public void cartao() {
 		cartao = true;
@@ -33,5 +31,9 @@ public abstract class Fruta {
 	
 	public boolean isCartao() {
 		return cartao;
+	}
+	
+	public double getPrecoBase() {
+		return precoBase;
 	}
 }

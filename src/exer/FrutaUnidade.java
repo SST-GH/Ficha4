@@ -15,7 +15,8 @@ public class FrutaUnidade extends Fruta {
 		return unidade;
 	}
 	
+	@Override
 	public double pagar() {
-		return super.pagar()*unidade;
+		return getPrecoBase()*unidade;
 	}
 }

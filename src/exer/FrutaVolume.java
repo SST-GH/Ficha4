@@ -15,7 +15,8 @@ public class FrutaVolume extends Fruta{
 		return volume;
 	}
 	
+	@Override
 	public double pagar() {
-		return super.pagar()*volume;
+		return getPrecoBase()*volume;
 	}
 }
