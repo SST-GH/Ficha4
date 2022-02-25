@@ -16,7 +16,7 @@ public class FrutaUnidade extends Fruta {
 	}
 	
 	@Override
-	public double pagar() {
+	public double pagar() {		//Override pq cada funcão vai ter especificidades próprias
 		return getPrecoBase()*unidade;
 	}
 }

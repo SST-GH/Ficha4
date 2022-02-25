@@ -1,8 +1,9 @@
 package exer;
 
-public class FrutaPeso extends Fruta{
+public class FrutaPeso extends Fruta implements Descontavel{
 	//Fields
 	private float peso = 0;
+	private float desconto;
 	
 	//Construtor
 	public FrutaPeso(String aNome, double aPrecoBase, float aPeso) {
@@ -16,7 +17,21 @@ public class FrutaPeso extends Fruta{
 	}
 	
 	@Override
-	public double pagar() {
-		return getPrecoBase()*peso;
+	public double pagar() {		//Override pq cada funcão vai ter especificidades próprias
+		return (getPrecoBase()*peso);
+	}
+	
+	@Override
+	public double descontar(double percentagem) {
+		return pagar()*percentagem;
+	}
+	
+	
+	public double setPercentagemDesconto() {
+		return desconto;
+	}
+	
+	public double precoDepoisDesconto() {
+		return pagar() - setPercentagemDesconto();
 	}
 }

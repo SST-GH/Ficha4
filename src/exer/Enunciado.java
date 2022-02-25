@@ -16,6 +16,14 @@ public class Enunciado {
 			e) Um método que determina o valor total gasto em frutos de um dado tipo. Método que 
 			deverá receber como parâmetro uma String tipoFruta.
 			Na classe principal, crie um cesto e insira vários tipos de fruta. Teste todos os métodos
+			
+		Ex. 3:
+			Toda a fruta a peso e toda a fruta a volume podem ter um desconto de uma 
+			determinada percentagem. Crie uma interface Descontavel que tem um método double
+			descontar(double percentagem) que será implementado pela classe FrutaPeso e pela class
+			FrutaVolume. Faça as alterações necessárias nestas classes, entre as quais a adição de um 
+			método setPercentagemDesconto(). Escreva a função main() para testar as respetivas 
+			alterações
 	 *
 	 **/
 	

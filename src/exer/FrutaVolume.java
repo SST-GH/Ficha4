@@ -1,6 +1,6 @@
 package exer;
 
-public class FrutaVolume extends Fruta{
+public class FrutaVolume extends Fruta implements Descontavel{
 	//Fields
 	private float volume = 0;
 	
@@ -16,7 +16,16 @@ public class FrutaVolume extends Fruta{
 	}
 	
 	@Override
-	public double pagar() {
+	public double pagar() {		//Override pq cada funcão vai ter especificidades próprias
 		return getPrecoBase()*volume;
 	}
+	
+	public double setPercentagemDesconto() {
+		return pagar()*Descontavel.descontar(0.2);
+	}
+	
+	public double precoDepoisDesconto() {
+		return pagar() - setPercentagemDesconto();
+	}
+	
 }
