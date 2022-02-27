@@ -18,20 +18,16 @@ public class FrutaPeso extends Fruta implements Descontavel{
 	
 	@Override
 	public double pagar() {		//Override pq cada funcão vai ter especificidades próprias
-		return (getPrecoBase()*peso);
+		return ((getPrecoBase()*(1-desconto))*peso);
 	}
 	
 	@Override
 	public double descontar(double percentagem) {
-		return pagar()*percentagem;
+		return percentagem;
 	}
 	
 	
 	public double setPercentagemDesconto() {
 		return desconto;
-	}
-	
-	public double precoDepoisDesconto() {
-		return pagar() - setPercentagemDesconto();
 	}
 }

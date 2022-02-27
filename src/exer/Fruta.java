@@ -29,11 +29,28 @@ public abstract class Fruta {
 		return nome;
 	}
 	
+	public void setNome() {
+		this.nome = nome;
+	}
+	
 	public boolean isCartao() {
 		return cartao;
 	}
 	
+	public void setCartao() {
+		this.cartao = cartao;
+	}
+	
 	public double getPrecoBase() {
 		return precoBase;
+	}
+	
+	public void setPrecoBase() {
+		this.precoBase = precoBase;
+	}
+	
+	@Override
+	public String toString() {
+		return "Fruta {" + "nome: " + nome + ", precoBase: " + precoBase + '}';
 	}
 }
