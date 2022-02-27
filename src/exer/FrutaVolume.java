@@ -21,9 +21,10 @@ public class FrutaVolume extends Fruta implements Descontavel{
 		return ((getPrecoBase()*(1-desconto))*volume);
 	}
 	
+	@Override
 	public double descontar(double percentagem) {
-		return percentagem;
-		
+		// TODO Auto-generated method stub
+		return 0;
 	}
 	
 	public double setPercentagemDesconto(double aDesconto) {

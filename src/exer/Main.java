@@ -36,10 +36,10 @@ public class Main {
 		
 		//Obter o desconto e o novo preço depois do desconto
 		fruta1.setPercentagemDesconto(0.1);
-		System.out.println("\nValor a pagar depois do desconto: " + fruta1.pagar());
+		System.out.println("\nValor a pagar depois do desconto: " + fruta1.pagar() + "€");
 		
 		fruta3.setPercentagemDesconto(0.3);
-		System.out.println("\nValor a pagar depois do desconto: " + fruta3.pagar());
+		System.out.println("\nValor a pagar depois do desconto: " + fruta3.pagar() + "€");
 		
 		
 //		System.out.println(fruta1.toString());

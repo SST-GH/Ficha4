@@ -27,13 +27,6 @@ public class FrutaPeso extends Fruta implements Descontavel{
 		return 0;
 	}
 	
-	
-//	
-//	@Override
-//	public double descontar(double percentagem) {
-//		return percentagem = desconto;
-//	}
-//	
 	public double setPercentagemDesconto(double aDesconto) {
 		return desconto = aDesconto;
 	}
