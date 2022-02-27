@@ -3,7 +3,7 @@ package exer;
 public class FrutaVolume extends Fruta implements Descontavel{
 	//Fields
 	private float volume = 0;
-	private float desconto;
+	private double desconto;
 	
 	//Construtor
 	public FrutaVolume(String aNome, double aPrecoBase, float aVolume) {
@@ -18,20 +18,16 @@ public class FrutaVolume extends Fruta implements Descontavel{
 	
 	@Override
 	public double pagar() {		//Override pq cada funcão vai ter especificidades próprias
-		return getPrecoBase()*volume;
+		return ((getPrecoBase()*(1-desconto))*volume);
 	}
 	
 	public double descontar(double percentagem) {
-		return pagar()*percentagem;
+		return percentagem;
 		
 	}
 	
-	public double setPercentagemDesconto() {
-		return desconto;
-	}
-	
-	public double precoDepoisDesconto() {
-		return pagar() - setPercentagemDesconto();
+	public double setPercentagemDesconto(double aDesconto) {
+		return desconto = aDesconto;
 	}
 	
 }
