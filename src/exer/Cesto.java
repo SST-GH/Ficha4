@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Cesto {
 	//Fields
-	private int totalItems;		//Varia
+	private int totalItems;				//Varia
 	private int capacidadeMax = 100;	//Const
 	private List<Fruta>cesto;
 	
