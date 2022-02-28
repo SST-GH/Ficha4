@@ -25,7 +25,7 @@ public class Main {
 		//Obter valor total da fruta no cesto
 		System.out.println("\nO valor total pago no cesto é de " + cesto1.calValorTotalCesto() + "€");
 		
-		//Determinar se é pago em cartão ou valor monetário.
+		//Determinar se é pago em cartão ou valor monetário
 		fruta3.monetario();
 		System.out.println("\nFoi pago por catão? " + fruta3.isCartao());
 
@@ -36,11 +36,12 @@ public class Main {
 		
 		//Obter o desconto e o novo preço depois do desconto
 		fruta1.setPercentagemDesconto(0.1);
-		System.out.println("\nValor a pagar depois do desconto: " + fruta1.pagar() + "€");
+		System.out.println("\nValor a pagar depois do desconto: " + fruta1.pagar() + "€" + " para " + fruta1.getNome());
 		
 		fruta3.setPercentagemDesconto(0.3);
-		System.out.println("\nValor a pagar depois do desconto: " + fruta3.pagar() + "€");
+		System.out.println("\nValor a pagar depois do desconto: " + fruta3.pagar() + "€" + " para " +fruta3.getNome());
 		
+		System.out.println("\nO novo valor total pago no cesto é de " + cesto1.calValorTotalCesto()+ "€");
 		
 //		System.out.println(fruta1.toString());
 		
