@@ -45,12 +45,12 @@ public abstract class Fruta {
 		return precoBase;
 	}
 	
-	public void setPrecoBase() {
-		this.precoBase = precoBase;
+	public void setPrecoBase(double aPrecoBase) {
+		this.precoBase = aPrecoBase;
 	}
 	
 	@Override
 	public String toString() {
-		return "Fruta {" + "nome: " + nome + ", precoBase: " + precoBase + '}';
+		return "Fruta.Fruta {" + "nome:' " + nome + '\'' + ", precoBase: " + precoBase + '}';
 	}
 }

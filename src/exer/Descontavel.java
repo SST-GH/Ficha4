@@ -2,5 +2,5 @@ package exer;
 
 interface Descontavel {
 	
-	public abstract double descontar(double percentagem);
+	public double descontar(double percentagem);	//Redondante por abstract.
 }

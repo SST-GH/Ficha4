@@ -10,8 +10,8 @@ public class Cesto {
 	private List<Fruta>cesto;
 	
 	//Construtor
-	public Cesto(int aTotalItems) {
-		totalItems = aTotalItems;
+	public Cesto() {
+		totalItems = 0;
 		cesto = new ArrayList<Fruta>();
 	}
 	
@@ -42,5 +42,14 @@ public class Cesto {
 				numTotal+=1;
 		}
 		return numTotal;
+	}
+	
+	public int valorPorTipo(String aValorTipo) {
+		int valorTipo = 0;
+		for(Fruta aux2: cesto) {
+			if(aux2.getClass().getSimpleName().equals(aValorTipo))
+				valorTipo += aux2.pagar();
+		}
+		return valorTipo;
 	}
 }
